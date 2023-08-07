@@ -23,7 +23,7 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Responsive car website</title>
+    <title>Responsive car website - Bedimcode</title>
   </head>
   <body>
     <!--==================== HEADER ====================-->
@@ -51,14 +51,18 @@
             <li class="nav__item">
               <a href="#featured" class="nav__link">Featured</a>
             </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="ar/index_rtl.html" class="nav__link">العربية</a>
+            </li>
           </ul>
 
           <div class="nav__close" id="nav-close">
             <i class="ri-close-line"></i>
           </div>
         </div>
-
-        <a href="ar/index_rtl.html" class="nav__link">العربية</a>
 
         <!-- Toggle button -->
         <div class="nav__toggle" id="nav-toggle">
@@ -76,11 +80,11 @@
         target="_blank"
         class="icon-linkedin intro"
       ></a>
-<!--       <a
+      <a
         href="//codepen.io/jerrykellar"
         target="_blank"
         class="icon-codepen intro"
-      ></a> -->
+      ></a>
       <a
         href="//www.facebook.com/jerrykellar"
         target="_blank"
@@ -106,8 +110,23 @@
             </h3>
           </div>
 
-          <img src="assets/img/home.png" alt="" class="home__img" />
-
+          <div class="home__img">
+            <img
+              src="assets/img/home.png"
+              alt=""
+              class="home__img home__img-2"
+            />
+            <img
+              src="assets/img/home2.png"
+              alt=""
+              class="home__img home__img-1"
+            />
+            <img
+              src="assets/img/home3.png"
+              alt=""
+              class="home__img home__img-3"
+            />
+          </div>
           <div class="home__car">
             <div class="home__car-data">
               <div class="home__car-icon">
@@ -637,7 +656,7 @@
               <li>Phone: (123) 456-7890</li>
             </ul>
           </div>
-          <div class="contact">
+          <div class="contact" id="contact">
             <h3>Send a Message</h3>
             <form>
               <label for="fname">First Name:</label>
