@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 
     <!--=============== FAVICON ===============-->
     <link
@@ -24,7 +23,7 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Responsive car website</title>
+    <title>Responsive car website - Bedimcode</title>
   </head>
   <body>
     <!--==================== HEADER ====================-->
@@ -52,13 +51,15 @@
             <li class="nav__item">
               <a href="#featured" class="nav__link">المستقبل</a>
             </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">تواصل معنا</a>
+            </li>
           </ul>
 
           <div class="nav__close" id="nav-close">
             <i class="ri-close-line"></i>
           </div>
         </div>
-
         <a href="../index.html" class="nav__link">English</a>
 
         <!-- Toggle button -->
@@ -77,11 +78,11 @@
         target="_blank"
         class="icon-linkedin intro"
       ></a>
-<!--       <a
+      <a
         href="//codepen.io/jerrykellar"
         target="_blank"
         class="icon-codepen intro"
-      ></a> -->
+      ></a>
       <a
         href="//www.facebook.com/jerrykellar"
         target="_blank"
@@ -107,7 +108,23 @@
             </h3>
           </div>
 
-          <img src="assets/img/home.png" alt="" class="home__img" />
+          <div class="home__img">
+            <img
+              src="assets/img/home.png"
+              alt=""
+              class="home__img home__img-2"
+            />
+            <img
+              src="assets/img/home2.png"
+              alt=""
+              class="home__img home__img-1"
+            />
+            <img
+              src="assets/img/home3.png"
+              alt=""
+              class="home__img home__img-3"
+            />
+          </div>
 
           <div class="home__car">
             <div class="home__car-data">
@@ -322,7 +339,7 @@
 
       <!--==================== FEATURES ====================-->
       <section class="features section">
-        <h2 class="section__title">More Features</h2>
+        <h2 class="section__title">المزيد من المزايا</h2>
 
         <div class="features__container container grid">
           <div class="features__group">
@@ -628,19 +645,19 @@
     <div class="container footer__content">
       <div class="wrapper">
         <div class="brand">
-          <h1><span>Elecar</span></h1>
+          <h1><span>سيارات</span></h1>
         </div>
         <div class="contact__form">
           <div class="company-info">
             <h3>معلومات الاتصال</h3>
             <ul>
               <li>العنوان: العنوان</li>
-              <li>البريد الإلكتروني: info@example.com</li>
-              <li>هاتف: (123) 456-7890</li>
+              <li>الإيميل: info@example.com</li>
+              <li>الهاتف: (123) 456-7890</li>
             </ul>
           </div>
-          <div class="contact">
-            <h3>تواصل معنا</h3>
+          <div class="contact" id="contact">
+            <h3>إرسل رسالة</h3>
             <form>
               <label for="fname">الإسم الأول:</label>
               <input type="text" id="fname" required placeholder=" " />
@@ -648,11 +665,11 @@
               <input type="text" id="lname" required placeholder=" " />
               <label for="email">البريد الإلكتروني:</label>
               <input type="email" id="email" required placeholder=" " />
-              <label for="phone">رقم الهتاف:</label>
+              <label for="phone">رقم الهاتف:</label>
               <input type="text" id="phone" required placeholder=" " />
-              <p>رسالة:</p>
+              <p>الرسالة:</p>
               <textarea required></textarea>
-              <button type="submit">Send</button>
+              <button type="submit">إرسل</button>
             </form>
           </div>
         </div>
