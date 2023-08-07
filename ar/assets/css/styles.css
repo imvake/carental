@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -16,7 +16,9 @@
   --container-color: hsl(219, 4%, 7%);
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Exo", sans-serif;
+  --body-font: "Noto Kufi Arabic", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  --body-font: "Rubik", sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -281,6 +283,7 @@ img {
   align-items: center;
   column-gap: 4rem;
   margin-bottom: 2rem;
+  padding-top: 11rem;
 }
 
 .home__car-name {
@@ -375,6 +378,51 @@ img {
 
 .button:hover {
   background-color: var(--first-color-alt);
+}
+
+/*=============== FADE  ===============*/
+
+@keyframes fadeinout {
+  0%,
+  20% {
+    opacity: 0;
+  }
+  30%,
+  50% {
+    opacity: 1;
+  }
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.home__img {
+  position: relative;
+  width: 280px; /* Adjust to match your image width */
+  height: auto;
+}
+
+.home__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.2s ease; /* Shortened to 0.5s for a faster fade */
+}
+
+.home__img .home__img-1 {
+  animation: fadeinout 15s infinite; /* Total duration is 15s */
+}
+
+.home__img .home__img-2 {
+  opacity: 0;
+  animation: fadeinout 15s 5s infinite; /* Delay of 5s for the second image */
+}
+
+.home__img .home__img-3 {
+  opacity: 0;
+  animation: fadeinout 15s 10s infinite; /* Delay of 10s for the third image */
 }
 
 /*=============== ABOUT ===============*/
